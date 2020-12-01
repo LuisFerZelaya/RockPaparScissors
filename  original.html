@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+      let playerSelection;
+      let computerSelection;
+      let playerScore = 0;
+      let computerScore = 0;
+      let message;
+      let Tie = 0;
+      
+      function computerPlay() {
+          let cpu = Math.floor(Math.random() * 3);
+          if (cpu === 0){
+              return 'Rock';}
+            else if (cpu === 1){
+                return 'Paper';}
+            else if (cpu === 2){
+                return 'Scissors';
+            }
+            }
+      function playRound(player, computer){
+            player = playerSelection.toLowerCase();
+           computer = computer.toLowerCase();
+            if ((player == 'rock' && computer == 'scissors') || (player == 'paper' && computer == 'rock') || (player == 'scisssors' && computer == 'paper'))
+            return 'Win!' ;
+            else if ((player == 'scissors' && computer == 'rock') || (player == 'rock' && computer == 'paper') || (player == 'paper' && comptuer == 'scissors'))
+            return 'Lose!';
+            else if ((player == 'rock' && computer == 'rock') || (player == 'paper' && computer == 'paper') || (player == 'scissors' && computer == 'scissors'))
+            return 'Tie!'
+            else return "Plese enter. 'Rock', 'Paper' or 'Scissors'";
+            
+        }
+        function game(){
+            for (let i = 0; i < 5; i++){
+                computerSelection = computerPlay();
+                playerSelection = prompt("Enter Rock, Paper or Scissors")
+                let result = playRound(playerSelection, computerSelection)
+                if (result  === 'Win!')
+                console.log( message = result );
+                else if (result === 'Lose!')
+                console.log (message = result  );
+                else console.log(message =result);
+        }
+        }
+
+  </script>
+
+
+</body>
+
+</html>

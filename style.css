@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    background-color: rgb(10, 135, 245);
+    }
+.tittle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    padding: 5vh;
+    }
+
+.selection{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    max-height: 200px;
+    max-width: auto;
+    padding: 20px;
+}
+
+.score{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.playerScore{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.computerScore{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;   
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
